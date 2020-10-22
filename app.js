@@ -153,7 +153,7 @@ function handleidTablerequest(hconnection) {
 
 
 function receivedata(conn){
-    addcontact(conn.peer);
+    addContact(conn.peer);
 
         conn.on("data",function (data) {
             console.log(conn.id,"receiving",data);
