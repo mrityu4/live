@@ -1,0 +1,92 @@
+
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="codemirror.js"></script>
+    <title>PeerPad</title>
+    <link rel="stylesheet" href="dracula.css">
+    <link rel="stylesheet" href="darcula.css">
+    <link rel="stylesheet" href="codemirror.css">
+    <style>
+
+        body{
+            background-color:rgb(57, 66, 78);
+        }
+        .loader {
+  border: 4px solid #f3f3f3; /* Light grey */
+  border-top: 4px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  animation: spin 1s linear infinite;
+
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+#codemirrorsizer > div > div > div > div.CodeMirror-cursors >span{
+    top: -10px;
+    font-size: 12px;
+    left: 0px;
+    position: absolute;
+    line-height: 15px;
+    background-color: #f3f3f3;
+
+}
+button{
+    color:white;
+    background-color:rgb(57, 66, 78) ;
+    border: 0;
+    font-size: 18px;
+}
+.header {
+  text-align: center;
+  /* background: #1abc9c; */
+  color: white;
+  font-size: 14px;
+  font-family: monospace;
+  font-weight:100;
+}
+
+body >div> div.CodeMirror.cm-s-dracula.CodeMirror-wrap > div.CodeMirror-scroll{
+    padding-top: 16px;
+    padding-bottom: 1px;
+}
+body >div > div.CodeMirror.cm-s-dracula.CodeMirror-wrap > div.CodeMirror-scroll > div.CodeMirror-sizer > div > div > div > div.CodeMirror-code > div > pre{
+    padding-right: 50px;
+}
+body >div > div > div.CodeMirror-scroll > div.CodeMirror-sizer{
+    min-width: 800px;
+}
+    </style>
+</head>
+<body> 
+    <div class="header">
+        <h1>peerPad - A Live Colaborative Text-Editor</h1>
+        
+      </div>
+      
+    <button style="display: block;">
+        <div id="link" onClick="updateClipboard()" class="loader" value="" data-tooltip="copy to clipboard"></div>
+
+    </button>    
+    <div style="float: left;">
+        <textarea name="" id="editor" cols="30" rows="10"></textarea>
+    </div>
+        <span  ><table id="contacts" style="width: 250px;padding-left: 20px;"></table></span>
+
+    
+    <span style=" position : fixed;bottom : 0;left: 12;"id="lineno"></span>
+    <span style=" position : fixed;bottom : 0;left: 30;"id="charno"></span>
+</body>
+<!-- <script src="https://cdn.jsdelivr.net/npm/peerjs@1.2.0/dist/peerjs.min.js"></script> -->
+<script src="./peer.js"></script>
+<script src="./app.js"></script>
+<script src="./lseq.js"></script>
+<script src="./updatecursor.js"></script>
+<script src="./contact.js"></script>
+
+</html>
