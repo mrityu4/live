@@ -51,7 +51,7 @@ peer.on('open', function (id) {
 
     var str = window.location.href;
     var n = str.lastIndexOf('?id=');
-    document.getElementById("link").value = window.location.origin + "?id=" + peer.id;
+    document.getElementById("link").value = "https://mrityu4.github.io/live/" + "?id=" + peer.id;
 
     if (n == -1) {//root user
         idtablereceived = true;
