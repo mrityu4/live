@@ -26,3 +26,7 @@ You will see a spinning loader. Peerjs server is alloting you a unique peerID. W
 ![alt text](https://github.com/mrityu4/live/blob/main/3.png?raw=true)
 
 4. After few seconds connection is established and users can collaborate.
+
+# Libraries used
+* peer.js
+* codemirror.js
