@@ -8,10 +8,19 @@ Other collaborater's view
 
 ![alt text](https://github.com/mrityu4/live/blob/main/screenshots/view.png?raw=true)
 
+## Features
+* Real-time collaborative Editor
+* Peer-to-peer architecture
+* End-to-end Emcrypted
+* Data is never stored or processed on server
+* No sign-in required
+* Low Latency
+
 
 Peerpad uses CRDT (Conflict-free Replicated Data Types) to store index of each character in document. CRDT is just a concept, I use LSEQ(https://hal.archives-ouvertes.fr/hal-00921633/document) implementation from the linked research paper. This is enables all the peers to be in sync.
 
 For connecton among users, I use peer.js( an abstration over WebRTC protocol ). WebRTC enables users to communicate with each other directly without relying on any server(hence decentralized and private ). Peer-to-peer architecture and UDP help to reduce latency to minimum. Data over WebRTC is end-to-end encrypted, there is no option to disable it.
+
 
 ## How to use
 1. Go to https://mrityu4.github.io/live/
