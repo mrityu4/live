@@ -11,7 +11,7 @@ Other collaborater's view
 ## Features
 * Real-time collaborative Editor
 * Peer-to-peer architecture
-* End-to-end Emcrypted
+* End-to-end Encrypted
 * Data is never stored or processed on server
 * No sign-in required
 * Low Latency
